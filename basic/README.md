@@ -12,11 +12,16 @@ This is a sample project to demonstrate the usage of the Rihtim Core server.
 
 ## Sample API requests
 
-Requests will return same dummy responses all the time you can test it with sample curl requests.
+Requests will return same dummy responses all the time. You can test them with sample curl requests.
 
 **Create:**
 
-`curl -i -d '{ "firstName": "John", "lastName": "Öztürk", "email": "ahmet@ozturk.com"}' -X POST http://localhost:8080/users`
+```
+curl -i \
+    -X POST \
+    -d '{ "firstName": "Mustafa", "lastName": "Kemal", "email": "mustafa@kemal.com"}' \
+    http://localhost:8080/users
+```
 
 **Query:**
 
@@ -28,7 +33,12 @@ Requests will return same dummy responses all the time you can test it with samp
 
 **Update:**
 
-`curl -i -d '{ "firstName": "John", "lastName": "Öztürk" }' -X PUT http://localhost:8080/users/57b36760e63bce1eeb000004`
+```
+curl -i \
+    -X PUT \
+    -d '{ "firstName": "Mustafa Kemal", "lastName": "Atatürk" }' \
+    http://localhost:8080/users/57b36760e63bce1eeb000004
+```
 
 **Delete:**
 
@@ -40,4 +50,9 @@ Requests will return same dummy responses all the time you can test it with samp
 
 **Another Bonus Request:**
 
-`curl -i -H "If-Modified-Since: Wed, 21 Oct 2015 07:28:00 GMT" -X GET http://localhost:8080/users`
+```
+curl -i \
+    -X GET \
+    -H "If-Modified-Since: Wed, 21 Oct 2015 07:28:00 GMT" \
+    http://localhost:8080/users
+```

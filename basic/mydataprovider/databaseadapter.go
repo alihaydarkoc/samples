@@ -40,9 +40,9 @@ func (da *Provider) Get(collection string, id string) (response map[string]inter
 
 	response = map[string]interface{}{
 		"_id": "57b36760e63bce1eeb000004",
-		"firstName": "Ahmet",
-		"lastName": "Öztürk",
-		"email": "ahmet@ozturk.com",
+		"firstName": "Mustafa",
+		"lastName": "Kemal",
+		"email": "mustafa@kemal.com",
 		"createdAt": 1597536000,
 		"updatedAt": 1597536000,
 	}
@@ -57,9 +57,9 @@ func (da *Provider) Query(collection string, parameters map[string][]string) (re
 	results := make([]map[string]interface{}, 1)
 	results[0] = map[string]interface{}{
 		"_id": "57b36760e63bce1eeb000004",
-		"firstName": "Ahmet",
-		"lastName": "Öztürk",
-		"email": "ahmet@ozturk.com",
+		"firstName": "Mustafa",
+		"lastName": "Kemal",
+		"email": "mustafa@kemal.com",
 		"createdAt": 1597536000,
 		"updatedAt": 1597536000,
 	}
